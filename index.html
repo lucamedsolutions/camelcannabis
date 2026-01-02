@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cannabis Camel - Age Verification</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="logo1.png" alt="Camel Logo" class="logo" />
+      <h1>Cannabis Camel</h1>
+    </div>
+  </header>
+
+  <main class="age-confirmation">
+    <h2>Are you 19 or older?</h2>
+    <p>With accordance to the Health Canada, this website requires you to be 19 years of age or older in order to enter this site.</br> Please confirm the following to proceed.</p>
+    <button class="over" onclick="confirmAge(true)">Yes, I am 19+</button>
+    <button class="btn-no" onclick="confirmAge(false)">No, I am under 19</button>
+  </main>
+
+  <footer>
+    <img class="logo-on" src="on-authorized.png" alt="Ontario Authorized Retailer" />
+    <p>&copy; 2025 Cannabis Camel</p>
+    <p>66 Overlea Blvd unit 11, East York, ON M4H 1C4</p>
+	<p>13209636 Canada Corp</p>
+	<p>CSRA1329121</p>
+  </footer>
+
+  <script>
+    function confirmAge(isOldEnough) {
+      if (isOldEnough) {
+        window.location.href = "https://cannabiscamelwebmenu.azurewebsites.net/"; 
+      } else {
+        alert("Sorry, you must be 19+ to enter.");
+      }
+    }
+  </script>
+
+</body>
+</html>
